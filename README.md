@@ -35,33 +35,7 @@ It provides a single-page dashboard where users can enter a waste item name and 
 *   **AI Engine**: Groq API integration (LLaMA 3.3 70B Versatile model) with rules-based local fallback.
 *   **Mapping**: Leaflet.js & OpenStreetMap (Inverted Dark Theme Tiles filter).
 *   **Data Visualization**: Chart.js (via `react-chartjs-2`).
-
----
-
-## 📁 Folder Structure
-
-```text
-waste-management-assistant/
-├── backend/
-│   ├── app.py                # Main Flask API service
-│   ├── db.py                 # Database controller (Firestore / Local JSON)
-│   ├── requirements.txt      # Python dependencies (Flask, Groq, Gunicorn)
-│   └── .env                  # Configuration variables
-├── frontend/
-│   ├── src/
-│   │   ├── App.jsx           # Main React UI shell & state engine
-│   │   ├── main.jsx          # Vite React entry point
-│   │   └── index.css         # Typography, glassmorphic styles & animations
-│   ├── package.json          # Node dependencies (Leaflet, ChartJS, Axios)
-│   ├── vite.config.js        # Vite port (5173) and backend API proxy settings
-│   └── index.html            # HTML shell with SEO meta tags
-├── deploy.bat                # Double-click script to host on Vercel
-├── README.md                 # Project documentation (This file)
-└── .gitignore                # Node/Python files to ignore in Git
-```
-
----
-
+*   
 ## 📦 Local Installation & Setup
 
 ### 1. Start Flask Backend (Port 5000)
@@ -97,10 +71,3 @@ The project is designed with an **offline-first client fallback layer** in `App.
 *   **Deploying Backend (Render)**: Set root directory as `backend`, build command as `pip install -r requirements.txt`, and start command as `gunicorn app:app`.
 
 ---
-
-## 👥 Development Team
-*   Manisha paneti
-*   Susmitha annadhanam
-*   Venkata Naga Neha Mamilla
-*   Ala sailaja
-*   A Vijayalakshmi Anala
